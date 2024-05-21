@@ -15,7 +15,20 @@ fun main() {
     println(num)
 
 //3
-    println("Введите двузначное число")
-    val number = readln().toInt()
-    println("${number % 10}" + "${(number - (number % 10) )/ 10}")
+    println("Введите число")
+    var number = readln().toInt()
+    //val newNumber: Array<String>
+    //var i = 1
+    var result = 0
+    while(true){
+        if (number > 9) {
+            result = (result + number % 10) * 10
+            number = (number - number % 10) / 10
+        }
+        else {
+            result += number
+            break
+        }
+    }
+    println(result)
 }
