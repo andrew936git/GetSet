@@ -1,3 +1,5 @@
+import kotlin.math.abs
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -17,6 +19,7 @@ fun main() {
 //3
     println("Введите число")
     var number = readln().toInt()
+    number = abs(number)
     var result = 0
     while(true){
         if (number > 9) {
