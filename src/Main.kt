@@ -17,8 +17,6 @@ fun main() {
 //3
     println("Введите число")
     var number = readln().toInt()
-    //val newNumber: Array<String>
-    //var i = 1
     var result = 0
     while(true){
         if (number > 9) {
